@@ -1,55 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My First HTML Page</title>
-</head>
-
-<!-- Background picture -->
-<head>
-  <style>
-    body {
-      background-image: url("Picture1.png");
-      background-repeat: no-repeat;
-      background-size: cover; 
-    }
-  </style>
-</head>
-
-
-<!-- EY logo -->
-<head>
+    <title>My First HTML Page</title>
     <style>
+        body {
+            background-image: url("Picture1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* vh stands for Viewport Height */
+            margin: 0;
+        }
+
         #image {
             position: absolute;
             top: 10px;
             left: 10px;
         }
-	img {
-        width: 10%;  /* or height: 60%; */
-    }
-    </style>
-</head>
-<body>
-    <img id="image" src="EY logo.png" alt="Description of image">
-</body>
 
-
-<!-- Chatbot -->
-<head>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;  /* vh stands for Viewport Height */
-            margin: 0;
+        img {
+            width: 10%;
+            /* or height: 60%; */
         }
     </style>
 </head>
 <body>
-    <iframe src="https://copilotstudio.microsoft.com/environments/a3c669f6-ac2e-4e77-ad43-beab3e15bee7/bots/jpm_is_powerCopilot/webchat?__version__=2" frameborder="0" style="width: 60%; height: 80%;"></iframe>
+    <img id="image" src="EY logo.png" alt="Description of image">
+    <iframe
+        src="https://copilotstudio.microsoft.com/environments/a3c669f6-ac2e-4e77-ad43-beab3e15bee7/bots/jpm_is_powerCopilot/webchat?__version__=2"
+        frameborder="0" style="width: 100%; height: 100%;"></iframe>
 </body>
-
-
-
 </html>
